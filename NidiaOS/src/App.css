@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Gohu Regular 14';
+  src: url(./fonts/Gohu/GohuFont14NerdFontMono-Regular.ttf);
+}
+
+@font-face{
+  font-family: "Gohu Regular 11";
+  src: url(./fonts/Gohu/GohuFontuni11NerdFontMono-Regular.ttf)
+}
+
+@theme {
+  --font-gohu-14: 'Gohu Regular 14';
+  --font-gohu-11: 'Gohu Regular 11';
+}
+
