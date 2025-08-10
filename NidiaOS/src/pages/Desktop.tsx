@@ -14,7 +14,7 @@ export default function Desktop() {
   if (isVisible) {
     return (
       <>
-        <div className="w-full h-[100vh] bg-cyan-600">
+        <div className="absolute w-full h-[100vh] bg-cyan-600">
           <div className="font-gohu-14">Hello, this is the desktop</div>
           <div>
             <img className="pixelated-effect" src={folder} alt="folderimage" />
