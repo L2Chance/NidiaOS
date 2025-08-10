@@ -22,7 +22,7 @@ export default function Taskbar() {
 
   return (
     <>
-      <div className=" absolute z-50 flex items-center h-15 fixed bottom-0 w-full border-effect bg-gray-200">
+      <div className="absolute z-50 flex items-center h-15 bottom-0 w-full border-effect bg-gray-200">
         <section className="flex flex-1">
           <article>
             <ButtonMenu OpenMenu={() => HandleOpenMenu()}></ButtonMenu>
