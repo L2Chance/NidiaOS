@@ -16,14 +16,11 @@ export default function Desktop() {
   if (isVisible) {
     return (
       <>
-        <div className="absolute w-full h-[100vh] bg-blue-300">
+        <div className="absolute w-full h-[100vh] bg-blue-300 overflow-hidden">
           <div className="flex">
             <section className="max-h-[90vh] gap-x-2 flex flex-col flex-wrap items-center">
               <Folder folderName="MyFoldering"></Folder>
-              <Icon image={folder} name="MyFolder" />
-              <Icon image={folder} name="MyFolder" />
-              <Icon image={folder} name="MyFolder" />
-              <Icon image={folder} name="MyFolder" />
+              <Folder folderName="MyFoldering2"></Folder>
             </section>
           </div>
         </div>
