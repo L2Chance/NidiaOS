@@ -1,3 +1,6 @@
 .filter {
   background-image: url("../assets/tv-texture.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

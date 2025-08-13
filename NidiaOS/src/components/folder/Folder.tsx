@@ -1,13 +1,14 @@
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import folder from "../../assets/folder.png";
 import Icon from "../Icon";
 import Window from "../Window";
 
 interface FolderProperties {
   folderName: string;
+  children?: React.ReactNode;
 }
 
-export default function Folder({ folderName }: FolderProperties) {
+export default function Folder({ folderName, children }: FolderProperties) {
   const [isOpen, setIsOpen] = useState(false);
 
   function handleOpen() {
@@ -35,11 +36,17 @@ export default function Folder({ folderName }: FolderProperties) {
                 </section>
               </section>
               <div className="flex h-full w-full">
-                <section className="h-[85%] w-[20%] bg-amber-100 flex justify-center items-center border-2">
-                  Hello, i'm a section
+                <section className="h-[85%] w-[20%] bg-amber-100 flex flex-col justify-center items-center border-2">
+                  <p className="font-gohu-11">━━━━━━━━━━━━━</p>
+                  <p className="font-gohu-11">━━━━━━━━━━━━━</p>
+                  <p className="font-gohu-11">━━━━━━━━━━━━━</p>
+                  <p className="font-gohu-11">━━━━━━━━━━━━━</p>
+                  <p className="font-gohu-11">━━━━━━━━━━━━━</p>
+                  <p className="font-gohu-11">━━━━━━━━━━━━━</p>
+                  <p className="font-gohu-11">━━━━━━━━━━━━━</p>
                 </section>
-                <section className="h-[85%] w-[80%] bg-amber-100 flex justify-center items-center border-2">
-                  hello
+                <section className="h-[85%] w-[80%] bg-amber-100 flex flex-wrap gap-2 border-2">
+                  {children}
                 </section>
               </div>
             </div>
